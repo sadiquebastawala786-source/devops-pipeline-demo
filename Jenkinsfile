@@ -22,7 +22,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat '"C:\\Users\\sadique\\AppData\\Local\\Programs\\Docker\\Docker\\resources\\bin\\docker.exe" build -t devops-pipeline-demo:1.0 .'
+                bat '"C:\\Users\\sadique\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t devops-pipeline-demo:1.0 .'
             }
         }
     }
