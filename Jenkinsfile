@@ -25,5 +25,11 @@ pipeline {
                 bat '"C:\\Users\\sadique\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t devops-pipeline-demo:1.0 .'
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat '"C:\\Users\\sadique\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\kubectl.exe" apply -f k8s.yaml'
+            }
+        }
     }
 }
